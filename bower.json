@@ -7,6 +7,10 @@
     "angular-sanitize": "^1.6.1",
     "firebase": "^3.6.7",
     "angularfire": "^2.3.0",
-    "angular-xml": "^2.2.2"
+    "angular-xml": "^2.2.2",
+    "angular-audio": "^1.7.3"
+  },
+  "resolutions": {
+    "angular": "^1.6.1"
   }
 }
