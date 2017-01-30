@@ -1,0 +1,10 @@
+<a ui-sref="feedAdd">New Feed</a>
+<md-list flex>
+  <md-list-item ui-sref="feedView({id:feed.$id})" class="md-3-line" ng-repeat="feed in feeds" ng-click="null">
+    <img ng-src="{{feed.image[1].url}}?25" class="md-avatar" alt="{{todos[1].who}}" />
+    <div class="md-list-item-text">
+      <h3>{{feed.title}}</h3>
+      <p>{{feed.description}}</p>
+    </div>
+  </md-list-item>
+</md-list>

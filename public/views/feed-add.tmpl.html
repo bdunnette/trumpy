@@ -1,0 +1,9 @@
+<form name="collectionForm" ng-submit="saveFeed(newFeed)">
+            <div layout="row">
+                <md-input-container >
+                    <label>Feed URL</label>
+                    <input type="url" ng-model="newFeed.url">
+                </md-input-container>
+            </div>
+            <md-button type="submit" class="md-raised">Save</md-button>
+        </form>
