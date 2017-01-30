@@ -3,7 +3,7 @@
     ".read": true,
     ".write": "auth != null",
     "items":{
-      ".indexOn":"feedId"
+      ".indexOn":["feedId","pubDate"]
     }
   }
 }

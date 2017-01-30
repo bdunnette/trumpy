@@ -13,6 +13,7 @@ var config = {
 firebase.initializeApp(config);
 
 var app = angular.module('trumpy', [
+    'ngSanitize',
     'ui.router',
     'ngMaterial',
     'firebase',
@@ -114,6 +115,7 @@ function ConfigBlock($stateProvider, $urlRouterProvider, $httpProvider) {
                     items.forEach(function(item) {
                         console.log(item);
                         item.feedId = feedId;
+                        item.pubDate = new Date(item.pubDate);
                         var guid = encodeURIComponent(item.guid.__text || item.guid).replace(/\./g, '%2E');
                         console.log(guid)
                         ref.child("items").child(guid).set(JSON.parse(JSON.stringify(item)));
